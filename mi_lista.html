@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"/>
+    <title>LC</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand">
+            <!-- btn para activar off canvas -->
+            <button class="btn btn-outline-warning" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions"><i class="ri-menu-line"></i></button>
+            Menu
+          </a>
+        </div>
+      </nav>
+
+      <!-- off canvas -->
+      <div class="offcanvas offcanvas-start" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasWithBothOptionsLabel"><i class="ri-menu-line"></i>Menu</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <div class="d-grid gap-2">
+                <a href="index.html" class="btn btn-primary" type="button">Crear tarea 📚</a>
+                <a href="mi_lista.html" class="btn btn-primary" type="button">Mi lista ✔</a>
+                
+              </div>
+        </div>
+      </div>
+
+
+      <!-- contenedos principal -->
+    <div class="container mt-3">
+        <h1 class="text-center">Mi lista ✔</h1>
+        <form class="row g-3 ">
+            
+            <div class="col-md-6">
+                <label for="inputPassword4" class="form-label">Prioridad</label>
+                <select class="form-select" id="inputPassword4">
+                    <option value="option1">Baja</option>
+                    <option value="option2">Media</option>
+                    <option value="option3">Alta</option>
+                </select>
+            </div>
+            
+            
+
+            <div id="lista-tareas"></div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-success">Guardar</button>
+            </div>
+          </form>
+    </div>
+    <script src="js/tarea.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
